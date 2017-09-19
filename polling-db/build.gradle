@@ -11,7 +11,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 group = 'io.chrismajor'
@@ -24,6 +24,7 @@ repositories {
 
 
 dependencies {
+	// TODO: some smaller dependencies! no need for this jar to be 20MB in size...
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
