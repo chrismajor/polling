@@ -29,6 +29,8 @@ public class Recording {
 
     private String providerName;
 
+    private String providerTwitterHandle;
+
     public Long getId() {
         return id;
     }
@@ -85,6 +87,14 @@ public class Recording {
         this.providerName = providerName;
     }
 
+    public String getProviderTwitterHandle() {
+        return providerTwitterHandle;
+    }
+
+    public void setProviderTwitterHandle(String providerTwitterHandle) {
+        this.providerTwitterHandle = providerTwitterHandle;
+    }
+
     @Override
     public String toString() {
         return "Recording{" +
@@ -95,6 +105,7 @@ public class Recording {
                 ", downloadSpeedLimit=" + downloadSpeedLimit +
                 ", uploadSpeedLimit=" + uploadSpeedLimit +
                 ", providerName='" + providerName + '\'' +
+                ", providerTwitterHandle='" + providerTwitterHandle + '\'' +
                 '}';
     }
 
@@ -109,11 +120,12 @@ public class Recording {
                 Objects.equals(uploadSpeed, recording.uploadSpeed) &&
                 Objects.equals(downloadSpeedLimit, recording.downloadSpeedLimit) &&
                 Objects.equals(uploadSpeedLimit, recording.uploadSpeedLimit) &&
-                Objects.equals(providerName, recording.providerName);
+                Objects.equals(providerName, recording.providerName) &&
+                Objects.equals(providerTwitterHandle, recording.providerTwitterHandle);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, pollingTimestamp, downloadSpeed, uploadSpeed, downloadSpeedLimit, uploadSpeedLimit, providerName);
+        return Objects.hash(id, pollingTimestamp, downloadSpeed, uploadSpeed, downloadSpeedLimit, uploadSpeedLimit, providerName, providerTwitterHandle);
     }
 }

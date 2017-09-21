@@ -3,6 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/polling.iml" filepath="$PROJECT_DIR$/polling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/polling-db/polling-db.iml" filepath="$PROJECT_DIR$/.idea/modules/polling-db/polling-db.iml" group="polling-db" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/polling-db/polling-db_main.iml" filepath="$PROJECT_DIR$/.idea/modules/polling-db/polling-db_main.iml" group="polling-db" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/polling-db/polling-db_test.iml" filepath="$PROJECT_DIR$/.idea/modules/polling-db/polling-db_test.iml" group="polling-db" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/polling-service/polling-service.iml" filepath="$PROJECT_DIR$/.idea/modules/polling-service/polling-service.iml" group="polling-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/polling-service/polling-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/polling-service/polling-service_main.iml" group="polling-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/polling-service/polling-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/polling-service/polling-service_test.iml" group="polling-service" />
     </modules>
   </component>
 </project>
