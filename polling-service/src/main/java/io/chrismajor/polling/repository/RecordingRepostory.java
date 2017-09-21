@@ -1,6 +1,6 @@
-package io.chrismajor.polling.db.repository;
+package io.chrismajor.polling.repository;
 
-import io.chrismajor.polling.db.domain.Recording;
+import io.chrismajor.polling.domain.Recording;
 import org.springframework.data.repository.CrudRepository;
 
 /**

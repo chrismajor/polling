@@ -1,7 +1,7 @@
-package io.chrismajor.polling.db.service;
+package io.chrismajor.polling.service;
 
-import io.chrismajor.polling.db.domain.Recording;
-import io.chrismajor.polling.db.repository.RecordingRepostory;
+import io.chrismajor.polling.domain.Recording;
+import io.chrismajor.polling.repository.RecordingRepostory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

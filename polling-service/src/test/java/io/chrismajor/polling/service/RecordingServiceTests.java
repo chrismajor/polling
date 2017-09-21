@@ -1,8 +1,12 @@
-package io.chrismajor.polling.db.service;
+package io.chrismajor.polling.service;
 
-import io.chrismajor.polling.db.domain.Recording;
+import io.chrismajor.polling.domain.Recording;
+import io.chrismajor.polling.repository.RecordingRepostory;
+import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.sql.Timestamp;
@@ -10,14 +14,17 @@ import java.util.Date;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+//@ContextHierarchy(@ContextConfiguration(classes = Application.class))
 public class RecordingServiceTests {
+
+    @Autowired
     private RecordingService recordingService;
 
-    public void init() {
+    @MockBean
+    private RecordingRepostory recordingRepostory;
 
-    }
-
-    private void testService() {
+    @Test
+    public void testService() {
         recordingService.createRecording(this.getRecording());
     }
 

@@ -1,1 +1,1 @@
-include "polling-db", "polling-service"
+include "polling-service"

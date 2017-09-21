@@ -1,6 +1,7 @@
-package io.chrismajor.polling.db.service;
+package io.chrismajor.polling.service;
 
-import io.chrismajor.polling.db.domain.Recording;
+
+import io.chrismajor.polling.domain.Recording;
 
 /**
  * Created by Christo on 19/09/2017.

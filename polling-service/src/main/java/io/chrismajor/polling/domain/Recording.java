@@ -1,4 +1,4 @@
-package io.chrismajor.polling.db.domain;
+package io.chrismajor.polling.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
