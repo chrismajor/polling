@@ -1,5 +1,6 @@
 package io.chrismajor.polling.service;
 
+import io.chrismajor.polling.PollingServiceApplication;
 import io.chrismajor.polling.domain.Recording;
 import io.chrismajor.polling.repository.RecordingRepostory;
 import org.junit.Test;
@@ -7,6 +8,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.ContextHierarchy;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.sql.Timestamp;
@@ -14,7 +17,7 @@ import java.util.Date;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-//@ContextHierarchy(@ContextConfiguration(classes = Application.class))
+@ContextHierarchy(@ContextConfiguration(classes = PollingServiceApplication.class))
 public class RecordingServiceTests {
 
     @Autowired
@@ -24,7 +27,8 @@ public class RecordingServiceTests {
     private RecordingRepostory recordingRepostory;
 
     @Test
-    public void testService() {
+    public void testService() throws Exception {
+        // TODO: do the proper test!
         recordingService.createRecording(this.getRecording());
     }
 

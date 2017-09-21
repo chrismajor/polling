@@ -1,4 +1,4 @@
-package io.chrismajor.polling.service;
+package io.chrismajor.polling;
 
 import org.junit.Ignore;
 import org.junit.Test;
